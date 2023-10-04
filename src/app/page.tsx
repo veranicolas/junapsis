@@ -1,113 +1,59 @@
-import Image from 'next/image'
+import Layout from "@/components/layout/layout"
+import styles from './page.module.css'
+import Card from "@/components/card/card";
 
 export default function Home() {
+
+  const junapseros = [
+    {
+      name: 'Tosti',
+      img: 'https://lh3.googleusercontent.com/pw/ADCreHfrPAFBHaCPpWI6dt7I4Daid7T4Db41XchZ0HxIGex7vW2ocHGsxLKHVaU6t1dpOeoo9oulIsmyy3d4FbvA7tWmklWcFYZQpi3lrVusunZveS2F4chFm4edu9Q8-3ix4lVtrsf6qye_uOostTdxGZTy=w1392-h923-s-no?authuser=0'
+    },
+    {
+      name:'Berni',
+      img:'https://lh3.googleusercontent.com/pw/ADCreHddPleFYwSNHgAbPAGxuFvKui-Myip0R90Fox3_1FgIiIXPULDUbrH2JMrRfp6Fhe8LxP3YEFMwCTeIBR5TeEyxpedZimPKdd-W_34KG_pk1e5Ol0uMIXwWv4AITHm7JZRuVvPL4N6kLzE8tz9mUHvsbw=w1920-h887-s-no?authuser=0'
+    },
+    {
+      name:'Vera',
+      img:'https://lh3.googleusercontent.com/pw/ADCreHe6y3Z6QJm_cT3NYZoAWdfwzseP9lCtOgz3tY-dSdoQ7trvLj-vFrYIjF8jhR4U6Qm0zO3Hy7yT83LEbpq-rwpCkm33mnCMThXXIjCK7dKO8gN2SFFzFtfGz9O0SHHvfv4LirC3yyMFAK_r_rV24rw55g=w426-h923-s-no?authuser=0'
+     }, 
+     {
+      name:'Napo',
+      img:'https://lh3.googleusercontent.com/pw/ADCreHeWIMgt05hPC-4M8eklNQi9paOLpLTTWBd6iAIVF_x44H5qgTczhy8UGMtjYuYdFpmPw9RIgW-dqDdJbs9J57tbev22X8S6txR_MO6nIBZbB7h98HqzXUI8-c2egnnRqvVVKnbbbAPGHayRxfP-7ANGPg=w1641-h923-s-no?authuser=0'
+     }, 
+     {
+      name:'Gushi',
+      img:'https://lh3.googleusercontent.com/pw/ADCreHfRsNddptMKUjcK_cCyOcb1M-vlQ9ZHumJeCtaiCBp7-UdIkozdVt1mjhkAp2JXYmyO5GwD6QYLXRKci-a61YjqoFgKa04gfkjF9Gbf62qIaSolg5VvTdiafQ-y2SNPHmf1l3uCuZze4R6XTVaSyBiVtg=w1385-h923-s-no?authuser=0'
+     }, 
+     {
+      name:'Zunda',
+      img:'https://lh3.googleusercontent.com/pw/ADCreHc_LAWOlNJFAn_pap5g-G62ZkB6NTeErtl6T6FM4xGV3wqS2mu-GXhLMaQvfe0Airx6997lei6zRPa80W3EqYxccq2SB3tREYuMGBFFP9EKn7-PF80J2zOBTECQvPQ5ZXcfkKBMuoSS-V9JIZuZ3aKV_N6hTqFwYaoTgI12jzTO3Z-B_EpdAls2H6qGdLsGMj5qp_Sare250gGLFfZwi9xhyxC4jluO8cQQSOboKHJWECyTe5-m7-GglCSLH1CQrn0w8czAQPFXnzqT5msFBBOTCpBERITsi7JzkpTGTtcYueAKJqLM_cvNKwGhEo3LN8LmnDhPCFkP6901CIhqYOTcYISzmXYB_jNf2P4XNgMSnrCkdoTqF83mkKtBhdtNf4taGN9XavEhEw0LsEsdbfd684L14zGy7XLngFAXOMYN3srH3H2kTzmgRNzoTFldBCrasdoTRK4E9iDX0A5CWHjBXyaRLOJ7EG4-3mUbuXwTqPBGjgQit4CYAoo5K7A4MHRbDNDee6ph_XrLrt-uk0bH9gdGZLH2cKR8YxJVfrPkV-WuTTllUvtgmlMlXHpY6o8CNPFu-htXM7VPghyKKdYcP4yURB10e2vcVDZl8rXnixm5mOATbhen-XkG7OXFBbnjYW8mSh4bOewVbQDvg7V2K3p1VWJAidDbJ-xOgOaj0xcrMzjz1GWGq2jutzJliZEkMORQ2xQmsTJ-sTNhkoAFrZ0NDFaM7_SkV3tjasu9HLMR_Ac9jyxoSNncNdH2Y4zZjQupl4x2uIO1-NtGiCLO2doOpqNoyTSKUhBSCn4PxnZMLGxzTyk28rUESiw8jAr-dnz8p6aVDtVa4nckcUNXnJwiSGnPG2_qDw3sK_k07Xmqfa20_6FR0fiHt19FOy-CMNIs2x6BBf5TL14IL79u81O5eFjvLwRZrzXzFlR642GK_6PaqAoeId-SLMeLv9CvPpQJZt3gWqVhoQEtRAAfJuMzXQE=w467-h464-s-no?authuser=0'
+     }, 
+     {
+      name:'Juampi',
+      img:'https://lh3.googleusercontent.com/pw/ADCreHfNOzrKbV1KSCGLouNJWZWWPJvtv07I6_OrygfudWsc1DjYqeM7dENF_TEOgRtS6VZoPjBL_LK-bdnROMGatPGj59Sb1-tmZz1ywnreywlr8bm9kGbCgLCCu13IW3E_DlMDSp_tsThDSuNuB5LCSIlcEw=w1639-h923-s-no?authuser=0'
+     },  
+     {
+      name:'Burro',
+      img:'https://lh3.googleusercontent.com/pw/ADCreHcX-FubZ7vkyQ6Kvl1CVn8FxJ_KR1DDLDS-t444eHbvHsUQ1l5mjHNmUICRaXCMWhIG3qEkmdXvYaWkQvqJUB3YBhuyegvMnlz7hEouyO67GwTnh87s9HgSCo7czQll9a0rK0-kxWIeGNxeNr_3W6IA_Q=w692-h923-s-no?authuser=0'
+     }, 
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <Layout>
+      <main className={styles.main}>
+        <p className='text-4xl'>Junapsis</p>
+        <div className={styles.miembros}> 
+          <p className="text-2xl">miembros de junapsis</p>
+          <div className="flex flex-wrap gap-3">
+            {
+              junapseros.map((pana, index)=>{
+                return <Card name={pana.name} img={pana.img} key={index}/>
+              })
+            }
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </main>
+    </Layout>
   )
 }

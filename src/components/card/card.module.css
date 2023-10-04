@@ -1,0 +1,49 @@
+.card{
+    height: 30vh;
+    width: 20vw;
+    
+    background-color: black;
+
+    > .caption{
+        display: block;
+        
+        width: 100%;
+        height: 100%;
+
+        transition: all 0.3s ease-in;
+
+        > .titulo {
+            color: black;
+            text-align: center;
+            line-height: 30vh;
+
+            opacity: 0;
+        }
+    }
+
+    > .caption:hover{
+        background-color: white;
+
+        > .titulo{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+@media all and (max-width:800px){
+
+    .card{
+        height: 15rem;
+        width: 100%;
+
+        > .caption:active{
+            background-color: white;
+    
+            > .titulo{
+                opacity: 1;
+            }
+        }
+    }
+}
