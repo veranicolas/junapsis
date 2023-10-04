@@ -27,7 +27,7 @@ export default function Home() {
      }, 
      {
       name:'Zunda',
-      img:'https://lh3.googleusercontent.com/pw/ADCreHc_LAWOlNJFAn_pap5g-G62ZkB6NTeErtl6T6FM4xGV3wqS2mu-GXhLMaQvfe0Airx6997lei6zRPa80W3EqYxccq2SB3tREYuMGBFFP9EKn7-PF80J2zOBTECQvPQ5ZXcfkKBMuoSS-V9JIZuZ3aKV_N6hTqFwYaoTgI12jzTO3Z-B_EpdAls2H6qGdLsGMj5qp_Sare250gGLFfZwi9xhyxC4jluO8cQQSOboKHJWECyTe5-m7-GglCSLH1CQrn0w8czAQPFXnzqT5msFBBOTCpBERITsi7JzkpTGTtcYueAKJqLM_cvNKwGhEo3LN8LmnDhPCFkP6901CIhqYOTcYISzmXYB_jNf2P4XNgMSnrCkdoTqF83mkKtBhdtNf4taGN9XavEhEw0LsEsdbfd684L14zGy7XLngFAXOMYN3srH3H2kTzmgRNzoTFldBCrasdoTRK4E9iDX0A5CWHjBXyaRLOJ7EG4-3mUbuXwTqPBGjgQit4CYAoo5K7A4MHRbDNDee6ph_XrLrt-uk0bH9gdGZLH2cKR8YxJVfrPkV-WuTTllUvtgmlMlXHpY6o8CNPFu-htXM7VPghyKKdYcP4yURB10e2vcVDZl8rXnixm5mOATbhen-XkG7OXFBbnjYW8mSh4bOewVbQDvg7V2K3p1VWJAidDbJ-xOgOaj0xcrMzjz1GWGq2jutzJliZEkMORQ2xQmsTJ-sTNhkoAFrZ0NDFaM7_SkV3tjasu9HLMR_Ac9jyxoSNncNdH2Y4zZjQupl4x2uIO1-NtGiCLO2doOpqNoyTSKUhBSCn4PxnZMLGxzTyk28rUESiw8jAr-dnz8p6aVDtVa4nckcUNXnJwiSGnPG2_qDw3sK_k07Xmqfa20_6FR0fiHt19FOy-CMNIs2x6BBf5TL14IL79u81O5eFjvLwRZrzXzFlR642GK_6PaqAoeId-SLMeLv9CvPpQJZt3gWqVhoQEtRAAfJuMzXQE=w467-h464-s-no?authuser=0'
+      img:'/zunda.jpg'
      }, 
      {
       name:'Juampi',
