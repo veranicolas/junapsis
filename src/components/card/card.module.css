@@ -38,7 +38,7 @@
         height: 15rem;
         width: 100%;
 
-        > .caption:active{
+        > .caption:hover{
             background-color: white;
     
             > .titulo{
