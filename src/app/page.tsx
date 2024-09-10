@@ -6,8 +6,8 @@ export default function Home() {
 
   const junapseros = [
     {
-      name: 'Tosti',
-      img: 'https://lh3.googleusercontent.com/pw/ADCreHfrPAFBHaCPpWI6dt7I4Daid7T4Db41XchZ0HxIGex7vW2ocHGsxLKHVaU6t1dpOeoo9oulIsmyy3d4FbvA7tWmklWcFYZQpi3lrVusunZveS2F4chFm4edu9Q8-3ix4lVtrsf6qye_uOostTdxGZTy=w1392-h923-s-no?authuser=0'
+      name: 'elchinchu',
+      img: 'https://as1.ftcdn.net/v2/jpg/07/73/01/80/1000_F_773018038_qDxOTuK64YoZct0yuMyYLUzb6lt83SCi.jpg'
     },
     {
       name:'Berni',
